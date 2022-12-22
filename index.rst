@@ -5,9 +5,9 @@
    :includehidden:
    :maxdepth: 3
 
-   aamod/about
-   aamod/website
-   aamod/update_site
+   about_aamod
+   aamod_howto
+   update_site
    mirrors
 
 Recovery Source

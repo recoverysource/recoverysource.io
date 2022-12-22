@@ -7,6 +7,7 @@
 
    aamod/about
    aamod/website
+   aamod/update_site
    mirrors
 
 Recovery Source

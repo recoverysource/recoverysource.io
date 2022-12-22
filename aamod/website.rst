@@ -11,6 +11,9 @@ website using ``aamod`` and Github Pages.
 New Website
 -----------
 
+Note: Documentation explaining how to :ref:`Update a Website <aamod-update>`
+includes many images and is provided in a separate document.
+
 Follow these steps to deploy a brand new regional AA website:
 
 0. Register a domain with one of the `common registrars`_

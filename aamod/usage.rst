@@ -1,6 +1,6 @@
 .. _aamod-usage:
 
-AAMod Usage
+Using AAMod
 ===========
 
 This page is primarily intended for website editors who are comfortable `working

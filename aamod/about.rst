@@ -1,12 +1,12 @@
 .. _aamod-about:
 
-About AA Mod
-============
+About AAMod
+===========
 
-AA Mod (``aamod``) is a website solution for Alcoholics Anonymous (A.A.)-related
+`AAMod`_ (``aamod``) is a website solution for Alcoholics Anonymous (A.A.)-related
 website, with a focus on sharing meeting information in a fast and secure manner.
 
-AA Mod is a Subtheme for `Hugo`_ with some extra documentation, scripts, etc.
+AAMod is a Subtheme for `Hugo`_ with some extra documentation, scripts, etc.
 Hugo is a website framework that builds statically-generated websites. These
 static websites are immune to the vast majority of new vulnerabilities, meaning
 your website will only ever have to change/update for content or design.
@@ -19,11 +19,11 @@ and want to avoid major hurdles to get there, then you are ready to take
 Website Bootstrap
 -----------------
 
-The `Hugo Template`_ repository holds a copy of ``exampleSite/`` (from `AA
-Mod`_) with customization done to help bootstrap a brand :ref:`aamod-newsite`
+The `Hugo Template`_ repository holds a copy of ``exampleSite/`` (from `AAMod`_)
+with customization done to help bootstrap a brand :ref:`aamod-newsite`
 This lets you skip a lot of requisite knowledge and get straight maintenance.
 
-AA Mod is a subtheme of `Mainroad`_. It can be used like any other theme with
+AAMod is a subtheme of `Mainroad`_. It can be used like any other theme with
 the exception of requiring the Mainroad subtheme be loaded first. This parent
 theme provides some great documentation which is not replicated here.
 
@@ -43,7 +43,7 @@ into content suitable for hugo to turn into a website.
 
 .. _Hugo: https://gohugo.io/
 .. _Hugo Template: https://github.com/recoverysource/hugo-template
-.. _AA Mod: https://github.com/recoverysource/aamod
+.. _AAMod: https://github.com/recoverysource/aamod
 .. _Github Pages: https://pages.github.com/
 .. _Area 63: https://area63aa.org/
 .. _Mainroad: https://themes.gohugo.io/themes/mainroad/

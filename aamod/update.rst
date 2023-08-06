@@ -49,12 +49,22 @@ a web interface for this which is documented on their website.
 Responsibility
 --------------
 
-After a project (website) administrator has given you access to ``Team``, you
-will likely be able to make changes directly to the website repository. Although
-access can be easily revoked and backups are automatic, most websites will
-automatically "build and deploy." This means care should be taken in order to
-avoid phrases such as, "oh, I thought that was funny but I didn't mean to
-actually save it like thit."
+After a project (website) administrator has given you access to their ``Team``,
+you will likely be able to make changes directly to the website repository.
+
+**NOTICE:** Most websites will automatically "build and deploy" (or "publish
+the changes") with all file changes. Various safeguards exist to prevent
+impacting a live/production website--the best safeguard is small/trivial updates
+that can be easily explained (in the commit title/description).
+
+**REMEMBER:** We may make mistakes, but we will promptly admit when we become
+aware of mistakes we have made. We will recognize the earnest effort of others
+and guide them through mistakes. Open communication will enable us to reach the
+newcomer.
+
+The Code of Conduct used by this project is offered as a
+basic template that aims to embody A.A. principles, including respect for others
+and anonymity.
 
 To accept this responsibility ...
 

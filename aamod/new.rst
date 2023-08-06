@@ -1,18 +1,17 @@
-.. _aamod:
-
-AA(mod) Website
-===============
-
-This page covers everything needed in order to deploy and maintain an AA-focused
-website using ``aamod`` and Github Pages.
-
 .. _aamod-newsite:
 
 New Website
------------
+===========
+
+These instructions are focused on deploying a `hugo-website`_ template and
+hosting it on GitHub infrastructure. The process will be very similar for
+different service providers.
 
 Note: Documentation explaining how to :ref:`Update a Website <aamod-update>`
 includes many images and is provided in a separate document.
+
+Basic Steps
+~~~~~~~~~~~
 
 Follow these steps to deploy a brand new regional AA website:
 
@@ -75,7 +74,7 @@ The two settings that matter are:
 Meeting Guide App
 ~~~~~~~~~~~~~~~~~
 
-AA Mod produces a JSON file that can be used by the `Meeting Guide`_ phone application.
+AAMod produces a JSON file that can be used by the `Meeting Guide`_ phone application.
 
 This file will be available at: https://yourdomain.tld/meeting-times.json
 

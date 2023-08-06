@@ -8,7 +8,6 @@
    about_aamod
    aamod_howto
    update_site
-   mirrors
 
 Recovery Source
 ===============

@@ -4,6 +4,7 @@
    :hidden:
    :includehidden:
 
+   code-of-conduct
    aamod/about
    aamod/new
    aamod/usage

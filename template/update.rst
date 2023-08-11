@@ -7,6 +7,7 @@ This document explains how a user can log in and create a new event or update a
 meeting time. This is intended for users who have never worked with Github and
 assumes a :ref:`aamod-newsite` has already been created.
 
+----
 
 Register an Account
 -------------------
@@ -78,6 +79,22 @@ To accept this responsibility ...
 
 3. Read through the disclaimer and choose the appropriate option.
 
+----
+
+Update a Meeting
+----------------
+
+It is recommended to first read :ref:`aamod-format`.
+
+The process to update meetings is very similar to the process required to
+``Create an Event``. Meeting information is stored in the ``data`` folder, which
+can either have a single ``meetings.yaml`` file, or a directory named
+``meetings/`` with any number of ``____.yaml`` files within, each one
+representing a meeting.
+
+**Spaces:** These `yaml`_ files are a special format that functions very similar
+to a database. Spaces (**NOT TABS**) and colons are very important.
+
 Create an Event
 ---------------
 
@@ -134,29 +151,6 @@ To create an event:
 11. Your changes will now be available for the world to view:
 
    |site_event|
-
-Update a Meeting
-----------------
-
-The process to update meetings is very similar to the process required to
-``Create an Event``. Meeting information is stored in the ``data`` folder, which
-can either have a single ``meetings.yaml`` file, or a directory named
-``meetings/`` with any number of ``____.yaml`` files within, each one
-representing a meeting.
-
-**Geo Coords:** Although the ``longitude`` and ``latitude`` fields are not
-required, adding them significantly increases the build time and accuracy of
-your website. If you locate the correct address in Google Maps, you can "right
-click" the "red pin" and then click the coordinates provided to "copy" them into
-your clipboard.
-
-**Address:** When presented with a poorly-formatted or incomplete address
-without geo coordinates provided, a best-effort guess will be made as to what
-the correct address is. More accurate addresses will produce more accurate
-results.
-
-**Spaces:** These `yaml`_ files are a special format that functions very similar
-to a serverless database. Spaces (**NOT TABS**) and colons are very important.
 
 ..
   _links

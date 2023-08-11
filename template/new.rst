@@ -59,17 +59,21 @@ Follow these steps to deploy a brand new regional AA website:
 11. Wait for DNS to propagate and verify DNS check in ``Settings>Pages`` passes before checking ``Enforce HTTPS``
 12. Introduce the website to your local groups!
 
+.. _apikey:
+
 Interactive Maps
 ~~~~~~~~~~~~~~~~
 
 In order to display an interactive map along with meeting lists, a Google Maps
 API Key is required. Google provides documentation to
-`obtain this API Key <https://developers.google.com/maps/documentation/embed/get-api-key>`.
+`obtain this API Key <https://developers.google.com/maps/documentation/embed/get-api-key>`__.
 
 The two settings that matter are:
 
 - Application restrictions: ``*<your-domain>/*`` (e.g. ``area63aa.org/*``)
 - API restrictions: ``Maps Embed API``, ``Maps JavaScript API``, ``Places API``
+
+.. _meeting-guide:
 
 Meeting Guide App
 ~~~~~~~~~~~~~~~~~

@@ -5,17 +5,26 @@
    :includehidden:
    :caption: Navigation
 
+   self
    code-of-conduct
 
 .. toctree::
    :hidden:
    :includehidden:
-   :caption: Hugo Theme - AAMod
+   :caption: Hugo - AAMod
 
-   aamod/about
-   aamod/new
-   aamod/usage
-   aamod/update
+   aamodule/about
+   aamodule/format
+   aamodule/usage
+   aamodule/prebuild
+
+.. toctree::
+   :hidden:
+   :includehidden:
+   :caption: Hugo - Template
+
+   template/new
+   template/update
 
 Recovery Source
 ===============
@@ -25,6 +34,6 @@ solutions in the spirit of open source that aid 12-Step Programs.
 
 Projects:
 
-  - :ref:`AAMod<aamod-about>`
-  - Website Template (documentation needed)
+  - :ref:`Hugo AAMod <aamod-about>`
+  - :ref:`Website Template <aamod-newsite>`
   - Group Recovery (documentation needed)

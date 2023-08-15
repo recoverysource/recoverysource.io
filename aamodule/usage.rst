@@ -59,6 +59,7 @@ This requires :ref:`mapapikey<apikey>` to be configured in site config.
     - **latitude**: Default map center latitude (default: 0)
     - **longitude**: Default map center longitude (default: 0)
     - **zoom**: Default map zoom level (default: 7)
+    - **data**: Root data key with meeting information (default: "meetings")
 
 **Usage:**
 
@@ -88,6 +89,7 @@ Meeting List
 **Options:**
 
     - **mode**: Display format of meeting list (default: time)
+    - **data**: Root data key with meeting information (default: "meetings")
 
       - ``time``, ``address``, ``interactive``
 
@@ -120,6 +122,7 @@ This requires :ref:`mapapikey<apikey>` to be configured in site config.
 **Options:**
 
     - **meeting_id**: The ``shortcode`` (or ID) of the meeting (required)
+    - **data**: Root data key with meeting information (default: "meetings")
 
 **Usage:**
 
@@ -145,6 +148,7 @@ Meeting Guide
 **Options:**
 
     - **timezone**: Default timezone when not specified by meeting (default: Africa/Asmara)
+    - **data**: Root data key with meeting information (default: "meetings")
 
 **Usage:**
 

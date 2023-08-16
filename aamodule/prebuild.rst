@@ -12,6 +12,24 @@ Hugo is `not able <https://github.com/gohugoio/hugo/issues/5074>`__ to generate
 "new" pages from data sources. ``Prebuild`` can read :ref:`meeting data<aamod-format>`
 from hugo's data source and generate stub files.
 
+Printable PDF
+-------------
+
+This is a foldable PDF that is intended to be printed on two sides and then
+folded twice, with Al-Anon meetings on one inner sheet and AA meetings on a full
+inner sheet.
+
+If there is enough interest, this can be broken into a separate repository and
+turned into a more flexible design.
+
+Live Example:
+
+- `AAMod:meeting-schedule.pdf
+  <https://aamod-demo.recoverysource.io/meeting-schedule.pdf>`__
+- `SiouxFallsAA:meeting-schedule.pdf
+  <https://siouxfallsaa.org/meeting-schedule.pdf>`__
+
+----
 
 Script Arguments
 ----------------

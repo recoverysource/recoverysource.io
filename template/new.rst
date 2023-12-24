@@ -83,7 +83,7 @@ AAMod produces a JSON file that can be used by the `Meeting Guide`_ phone applic
 This file will be available at: https://yourdomain.tld/meeting-times.json
 
 Connecting your meeting information to this application requires filling out a
-``connection form``_. Where it asks for ``Site Sharing Key``, the web address of
+`connection form`_. Where it asks for ``Site Sharing Key``, the web address of
 ``meeting-times.json`` should be provided.
 
 Security Updates

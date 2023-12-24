@@ -89,7 +89,7 @@ Connecting your meeting information to this application requires filling out a
 Security Updates
 ----------------
 
-Most website vulnerabilities are around user authentication and authorization.
+Most website vulnerabilities involve user authentication and authorization.
 They attempt to find ways to act like an admin or bypass an admin check or
 convince someone to share their password. Truly static websites do not suffer
 these problems because there is no dynamic component to be exploited. You cannot

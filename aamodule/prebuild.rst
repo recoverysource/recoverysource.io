@@ -84,6 +84,11 @@ Configuration read from ``prebuild.yaml`` and merged with ``--runtime``.
       # Columns used on the front (quarter sheet)
       anonlist: 2
 
+    # Hide day-of-week header if there are no meetings within
+    hide-empty:
+      aalist: false
+      anonlist: false
+
 **Required Values:** (example provided)
 
 The data below provides a functional example and was copied from `exampleSite

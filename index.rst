@@ -11,6 +11,13 @@
 .. toctree::
    :hidden:
    :includehidden:
+   :caption: Sober Page
+
+   soberpage/about
+
+.. toctree::
+   :hidden:
+   :includehidden:
    :caption: Hugo - AAMod
 
    aamodule/about
@@ -36,4 +43,4 @@ Projects:
 
   - :ref:`Hugo AAMod <aamod-about>` [`demo <https://aamod-demo.recoverysource.io/>`__]
   - :ref:`Website Template <aamod-newsite>` [`demo <https://template-demo.recoverysource.io>`__]
-  - Group Recovery (development needed)
+  - :ref:`Sober Page <soberpage-about>` [`live <https://sober.page>`__]

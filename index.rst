@@ -7,6 +7,7 @@
 
    self
    code-of-conduct
+   funding
 
 .. toctree::
    :hidden:

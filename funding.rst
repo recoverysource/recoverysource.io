@@ -17,6 +17,7 @@ focusing on predictable billing and end-user experience.
 
 .. list-table::
    :header-rows: 1
+   :widths: 10 40 50
 
    * - Cost
      - Item
@@ -51,6 +52,7 @@ is able to accept from it's members.
 
 .. list-table::
    :header-rows: 1
+   :widths: 10 90
 
    * - Cost
      - Item

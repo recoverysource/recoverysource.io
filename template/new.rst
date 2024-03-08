@@ -3,72 +3,115 @@
 New Website
 ===========
 
-These instructions are focused on deploying a `hugo-website`_ template and
-hosting it on GitHub infrastructure. The process will be very similar for
-different service providers.
+It is important to understand that deploying a website, maintaining the website
+itself, and maintaining the content on the website are three fundamentally
+different challenges.
 
-Note: Documentation explaining how to :ref:`Update a Website <aamod-update>`
-includes many images and is provided in a separate document.
+The instructions on this page cover the initial setup and require a level of
+technical competency which may not be readily available; this should not stop
+you! Please, reach out on `discord`_ if you need help.
 
-Basic Steps
-~~~~~~~~~~~
+Continued maintenance is primarily limited to :ref:`Content Updates <aamod-update>`.
 
-Follow these steps to deploy a brand new regional AA website:
+Prerequisite: DNS
+-----------------
 
-0. Register a domain with one of the `common registrars`_
+Domain Name Systems (DNS) are like a phone book for the internet. They tell your
+computer/phone where to find a website. The number looks much different than a
+phone number, but works exactly the same.
 
+There are two primary options available for your domain name:
+
+1. Use a subdomain of https://sober.page/:
+
+   - Share your fork (if any) on `discord`_ and ask for help!
+   - **OR** Create a `Pull Request <https://github.com/recoverysource/sober.page/tree/master/data/domains>`__
+     with a new CNAME
+   - **OR** Open an `Issue <https://github.com/recoverysource/sober.page/issues>`__
+     with a link to your website project
+
+2. Register your own domain using a "DNS Registrar":
+
+   - The best options out there have shut down
+   - This project transitioned from Porkbun (better interface) to Epik (better support/features)
    - A good rule of thumb is to avoid any service that offers to build your website (i.e. BlueHost)
 
+   You will need these addresses if hosting on Github::
+
+       A     @     185.199.108.153
+                   185.199.109.153
+                   185.199.110.153
+                   185.199.111.153
+       AAAA  @     2606:50c0:8000::153
+                   2606:50c0:8001::153
+                   2606:50c0:8002::153
+                   2606:50c0:8003::153
+       CNAME www   <username|project>.github.io.
+
+Initial Setup
+-------------
+
+This assumes you have a Domain Name (DNS) picked out and need to go from looking
+at a confusing repository to having a website published on the internet.
+
 1. Create an account and log in to Github
-2. Create a new free organization
 
-   - GH Pages is restricted to one site per user/org)
-   - You can alternatively register with a shared account (i.e. areaXweb) and skip this step
+   - You can (optionally) create a "github organization," which is functionally
+     equivalent to a "team". This is not required to share your fork and can be
+     set up later.
 
-3. Set up DNS:
-::
+2. Make a copy of `hugo-website`_, giving it a meaningful name and description
 
-    A     @     185.199.108.153
-                185.199.109.153
-                185.199.110.153
-                185.199.111.153
-    AAAA  @     2606:50c0:8000::153
-                2606:50c0:8001::153
-                2606:50c0:8002::153
-                2606:50c0:8003::153
-    CNAME www   <username|project>.github.io.
-
-4. Make a copy of `hugo-website`_, giving it a meaningful name and description
+   |github_start|
 
    - Choose ``Fork`` if you would like us to watch ``aamod`` for you (easier).
    - Choose ``Use this template`` to create a copy without the link (safer).
 
-5. Go to the "Actions" tab in your new repository and enable workflows
-6. Copy any example content (without ``example-``) and update as appropriate:
+     E.g. |github_create|
+
+3. Note: Actions are enabled by default, but these will fail until a valid
+   configuration is created.
+
+4. Copy any example content (without ``example-``) and update as appropriate:
 
    - ``example-config.yaml`` (live `sample config`_)
+
+     + Focus on baseURL, title, descrition, phone, copyright, and aasites.
+
+   - ``example-prebuild.yaml`` (live `sample prebuild`_)
+
+     + Remove "example-" from the "meeting-data" and copy baseURL
+     + Tweak "pdf-blurbs" to your liking
+
    - ``content/example-contact.md``
 
-7. Update ``static/CNAME`` with the domain you registered (step 0)
-8. Update local meeting information in ``data/meetings.yaml``
+     + Remove line: ``draft: true``
+     + Replace example content with your own
+
+5. Update ``static/CNAME`` with the domain name (DNS) that was chosen earlier.
+6. Create local meeting information in ``data/meetings.yaml``
 
    - This can optionally be broken into one meeting per file (see `Area 63 Meetings`_)
 
-9. Wait for a successful build and deploy of your website
-10. Open the ``Settings`` page of your repository then go to ``Pages`` and set ``Source`` to ``Branch[gh-pages]``
-11. Wait for DNS to propagate and verify DNS check in ``Settings>Pages`` passes before checking ``Enforce HTTPS``
-12. Introduce the website to your local groups!
+7. After making chanegs, wait for a successful build and deploy of your website
+8. Open the ``Settings`` page of your repository then go to ``Pages`` and set ``Source`` to ``Branch[gh-pages]``
+9. Verify DNS check in ``Settings>Pages`` passes before checking ``Enforce HTTPS``
 
 .. _apikey:
 
 Interactive Maps
-~~~~~~~~~~~~~~~~
+----------------
 
-In order to display an interactive map along with meeting lists, a Google Maps
-API Key is required. Google provides documentation to
-`obtain this API Key <https://developers.google.com/maps/documentation/embed/get-api-key>`__.
+If you do not want display Google Maps on your site, then you can put a ``#`` in
+front of "mapapikey" (in your ``config.yaml``), similar to the comment above it.
 
-The two settings that matter are:
+The cost of this service is cumulative (across all sites), so we cannot provide
+a generice key. However, anyone can register for an account and create an
+`API Key <https://developers.google.com/maps/documentation/embed/get-api-key>`__.
+
+Github will warn administrators about an API key being discovered in a
+repository. This key cannot be kept secret and instead needs to be kept secure
+using the following settings:
 
 - Application restrictions: ``*<your-domain>/*`` (e.g. ``area63aa.org/*``)
 - API restrictions: ``Maps Embed API``, ``Maps JavaScript API``, ``Places API``
@@ -76,7 +119,7 @@ The two settings that matter are:
 .. _meeting-guide:
 
 Meeting Guide App
-~~~~~~~~~~~~~~~~~
+-----------------
 
 AAMod produces a JSON file that can be used by the `Meeting Guide`_ phone application.
 
@@ -101,9 +144,16 @@ update for this project is currently inconceivable.
 
 ..
   _links
-.. _common registrars: https://domains.google/
+.. _discord: https://discord.gg/hjTJSA7Ynu
 .. _hugo-website: https://github.com/recoverysource/hugo-website
 .. _sample config: https://github.com/area63aa/area63aa.org/blob/master/config.yaml
+.. _sample prebuild: https://github.com/area63aa/area63aa.org/blob/master/prebuild.yaml
 .. _Area 63 Meetings: https://github.com/area63aa/area63aa.org/tree/master/data/meetings
 .. _Meeting Guide: https://www.aa.org/meeting-guide-app
 .. _connection form: https://meetingguide.helpdocs.io/article/jsydw3bxw8-connection-form
+
+..
+ _images
+.. |github_start| image:: /static/images/newsite/2_github_start.png
+.. |github_create| image:: /static/images/newsite/2_github_create.png
+   :scale: 60%

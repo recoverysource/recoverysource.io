@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using AAMod &mdash; Recovery Source 0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Prebuild" href="prebuild.html" />
+    <link rel="prev" title="Data Format" href="format.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Recovery Source
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Navigation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Recovery Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../funding.html">7th Tradition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sober Page</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../soberpage/about.html">About Sober Page</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - AAMod</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About AAMod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format.html">Data Format</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using AAMod</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#feature-types">Feature Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#report-list">Report List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#meeting-map">Meeting Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#meeting-list">Meeting List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#meeting-info">Meeting Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#meeting-guide">Meeting Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prebuild.html">Prebuild</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - Template</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../template/new.html">New Website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template/update.html">Update Website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Recovery Source</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Using AAMod</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/aamodule/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-aamod">
+<span id="aamod-usage"></span><h1>Using AAMod<a class="headerlink" href="#using-aamod" title="Permalink to this headline"></a></h1>
+<p>This page is primarily intended for website editors who are comfortable <a class="reference external" href="https://gohugo.net/getting-started/quick-start/">working
+with Hugo</a> websites and covers all “features” provided by <code class="docutils literal notranslate"><span class="pre">AAMod</span></code>.</p>
+<section id="feature-types">
+<h2>Feature Types<a class="headerlink" href="#feature-types" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jpdroege.com/blog/hugo-shortcodes-partials/">Shortcodes</a> allow website editors to add content inside of markdown files.</p></li>
+<li><p><a class="reference external" href="https://gohugo.net/templates/partials/">Partials</a> are similar to <code class="docutils literal notranslate"><span class="pre">Shortcodes</span></code>, but used inside of template files.</p></li>
+<li><p>Layouts are “top-level templates” that link content to template.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="report-list">
+<span id="aamod-reportlist"></span><h2>Report List<a class="headerlink" href="#report-list" title="Permalink to this headline"></a></h2>
+<p><strong>Generates a list of links from a directory of files.</strong></p>
+<p><strong>Type:</strong> <code class="docutils literal notranslate"><span class="pre">Shortcode</span></code></p>
+<p><strong>Options:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>base</strong>: Prefixed to <code class="docutils literal notranslate"><span class="pre">path</span></code> before disk search (required)</p></li>
+<li><p><strong>path</strong>: Directory scanned for files and used for links (required)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Usage:</strong></p>
+<blockquote>
+<div><div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="x">Recent Reports:</span>
+
+<span class="cp">{{</span><span class="o">&lt;</span> <span class="nv">report-list</span> <span class="nv">base</span><span class="o">=</span><span class="s2">&quot;static&quot;</span> <span class="nv">path</span><span class="o">=</span><span class="s2">&quot;content/treasury/&quot;</span> <span class="o">&gt;</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Demonstration:</strong>
+<a class="reference external" href="https://github.com/recoverysource/aamod/tree/master/exampleSite/static/reports/treasury">Input</a>
+-&gt;  <a class="reference external" href="https://aamod-demo.recoverysource.net/features/">Output</a></p>
+<hr class="docutils" />
+</section>
+<section id="meeting-map">
+<span id="aamod-meetingmap"></span><h2>Meeting Map<a class="headerlink" href="#meeting-map" title="Permalink to this headline"></a></h2>
+<p><strong>Generates an interactive google map plotted with meeting locations.</strong></p>
+<p>This requires <a class="reference internal" href="../template/new.html#apikey"><span class="std std-ref">mapapikey</span></a> to be configured in site config.</p>
+<p><strong>Type:</strong> <code class="docutils literal notranslate"><span class="pre">Shortcode</span></code></p>
+<p><strong>Options:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>latitude</strong>: Default map center latitude (default: 0)</p></li>
+<li><p><strong>longitude</strong>: Default map center longitude (default: 0)</p></li>
+<li><p><strong>zoom</strong>: Default map zoom level (default: 7)</p></li>
+<li><p><strong>data</strong>: Root data key with meeting information (default: “meetings”)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Usage:</strong></p>
+<blockquote>
+<div><div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{{</span><span class="o">&lt;</span> <span class="nv">meeting-map</span> <span class="nv">zoom</span><span class="o">=</span><span class="m">7</span> <span class="nv">latitude</span><span class="o">=</span><span class="m">43.536388</span> <span class="nv">longitude</span><span class="o">=-</span><span class="m">96.731667</span> <span class="o">&gt;</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Result:</strong></p>
+<blockquote>
+<div><img alt="../_images/meeting-map.webp" src="../_images/meeting-map.webp" />
+</div></blockquote>
+<p><strong>Demonstration:</strong>
+<a class="reference external" href="https://raw.githubusercontent.com/recoverysource/aamod/master/exampleSite/content/meetings/_index.md">Input</a>
+-&gt; <a class="reference external" href="https://aamod-demo.recoverysource.net/meetings/">Output</a></p>
+<hr class="docutils" />
+</section>
+<section id="meeting-list">
+<span id="aamod-meetinglist"></span><h2>Meeting List<a class="headerlink" href="#meeting-list" title="Permalink to this headline"></a></h2>
+<p><strong>Generates lists of all meetings.</strong></p>
+<p><strong>Type:</strong> <code class="docutils literal notranslate"><span class="pre">Shortcode</span></code></p>
+<p><strong>Options:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>mode</strong>: Display format of meeting list (default: time)</p></li>
+<li><p><strong>data</strong>: Root data key with meeting information (default: “meetings”)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">time</span></code>, <code class="docutils literal notranslate"><span class="pre">address</span></code>, <code class="docutils literal notranslate"><span class="pre">interactive</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Usage:</strong></p>
+<blockquote>
+<div><div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{{</span><span class="o">%</span> <span class="nv">meeting-list</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&quot;time&quot;</span> <span class="o">%</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Demonstration:</strong>
+<a class="reference external" href="https://github.com/recoverysource/aamod/tree/master/exampleSite/data/meetings.yaml">Input</a>
+-&gt; <a class="reference external" href="https://aamod-demo.recoverysource.net/meetings/">Output</a></p>
+<hr class="docutils" />
+</section>
+<section id="meeting-info">
+<span id="aamod-meetinginfo"></span><h2>Meeting Info<a class="headerlink" href="#meeting-info" title="Permalink to this headline"></a></h2>
+<p><strong>Display information about a meeting.</strong></p>
+<p>This is primarily meant as “glue” that converts stubs, which were generated by
+the <a class="reference internal" href="prebuild.html#aamod-prebuild"><span class="std std-ref">Prebuild</span></a> process, into a display of information.</p>
+<p>This requires <a class="reference internal" href="../template/new.html#apikey"><span class="std std-ref">mapapikey</span></a> to be configured in site config.</p>
+<p><strong>Type:</strong> <code class="docutils literal notranslate"><span class="pre">Shortcode</span></code></p>
+<p><strong>Options:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>meeting_id</strong>: The <code class="docutils literal notranslate"><span class="pre">shortcode</span></code> (or ID) of the meeting (required)</p></li>
+<li><p><strong>data</strong>: Root data key with meeting information (default: “meetings”)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Usage:</strong></p>
+<blockquote>
+<div><div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{{</span><span class="o">&lt;</span> <span class="nv">meeting-info</span> <span class="nv">meeting_id</span><span class="o">=</span><span class="s2">&quot;risingtogether&quot;</span> <span class="o">&gt;</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Demonstration:</strong>
+<a class="reference external" href="https://github.com/recoverysource/aamod/blob/master/exampleSite/data/meetings.yaml#L110">Input</a>
+-&gt; <a class="reference external" href="https://aamod-demo.recoverysource.net/meetings/risingtogether/">Output</a></p>
+<hr class="docutils" />
+</section>
+<section id="meeting-guide">
+<span id="aamod-meetingguide"></span><h2>Meeting Guide<a class="headerlink" href="#meeting-guide" title="Permalink to this headline"></a></h2>
+<p><strong>Generates the JSON required for integration with :ref:`Meeting Guide&lt;meeting-guide&gt;`.</strong></p>
+<p><strong>Type:</strong> <code class="docutils literal notranslate"><span class="pre">Shortcode</span></code></p>
+<p><strong>Options:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>timezone</strong>: Default timezone when not specified by meeting (default: Africa/Asmara)</p></li>
+<li><p><strong>data</strong>: Root data key with meeting information (default: “meetings”)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Usage:</strong></p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span># content/meeting-guide.md
+---
+outputs: [json]
+url: &quot;/meeting-guide.json&quot;
+---
+{{&lt; meeting-guide timezone=&quot;America/Los_Angeles&quot; &gt;}}
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Result:</strong> The example usage will create a json file at <code class="docutils literal notranslate"><span class="pre">/meeting-guide.json</span></code></p>
+<p><strong>Demonstration:</strong>
+<a class="reference external" href="https://raw.githubusercontent.com/recoverysource/aamod/master/exampleSite/content/meeting-guide.md">Input</a>
+-&gt; <a class="reference external" href="https://aamod-demo.recoverysource.net/meeting-guide.json">Output</a></p>
+<hr class="docutils" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="format.html" class="btn btn-neutral float-left" title="Data Format" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="prebuild.html" class="btn btn-neutral float-right" title="Prebuild" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Recovery Source.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

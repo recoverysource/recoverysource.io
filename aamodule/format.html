@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Format &mdash; Recovery Source 0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using AAMod" href="usage.html" />
+    <link rel="prev" title="About AAMod" href="about.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Recovery Source
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Navigation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Recovery Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../funding.html">7th Tradition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sober Page</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../soberpage/about.html">About Sober Page</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - AAMod</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About AAMod</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using AAMod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prebuild.html">Prebuild</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - Template</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../template/new.html">New Website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template/update.html">Update Website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Recovery Source</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Data Format</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/aamodule/format.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-format">
+<span id="aamod-format"></span><h1>Data Format<a class="headerlink" href="#data-format" title="Permalink to this headline"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Use of correct space and syntax in yaml files is CRITICAL!
+If unsure, syntax can be validated with: <a class="reference external" href="https://yaml-online-parser.appspot.com/">https://yaml-online-parser.appspot.com/</a></p>
+</div>
+<ul>
+<li><p>Use two spaces to indent elements.</p></li>
+<li><p>Required Fields: [<code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">time</span></code>, <code class="docutils literal notranslate"><span class="pre">type</span></code>]</p></li>
+<li><p>Valid <code class="docutils literal notranslate"><span class="pre">type</span></code> codes come from <a class="reference external" href="https://github.com/code4recovery/spec#meeting-types">https://github.com/code4recovery/spec#meeting-types</a>)</p>
+<p>Partial List: <code class="docutils literal notranslate"><span class="pre">EN:English</span></code>, <code class="docutils literal notranslate"><span class="pre">B:BigBook</span></code>, <code class="docutils literal notranslate"><span class="pre">C:Closed</span></code>, <code class="docutils literal notranslate"><span class="pre">O:Open</span></code>,
+<code class="docutils literal notranslate"><span class="pre">12x12:TwelveByTwelve</span></code>, <code class="docutils literal notranslate"><span class="pre">D:Discussion</span></code>, <code class="docutils literal notranslate"><span class="pre">SP:Speaker</span></code>, <code class="docutils literal notranslate"><span class="pre">ST:StepStudy</span></code>,
+<code class="docutils literal notranslate"><span class="pre">TR:TraditionStudy</span></code>, <code class="docutils literal notranslate"><span class="pre">X:WheelchairAccess</span></code>, <code class="docutils literal notranslate"><span class="pre">BA:Babysitting</span></code></p>
+</li>
+<li><p>Default <code class="docutils literal notranslate"><span class="pre">timezone</span></code> is provided by the <a class="reference internal" href="usage.html#aamod-meetingguide"><span class="std std-ref">Meeting Guide</span></a> shortcode</p></li>
+<li><p>Each “meeting” can be placed into a file named <code class="docutils literal notranslate"><span class="pre">data/meetings/&lt;shortname&gt;.yaml</span></code>:</p>
+<ul class="simple">
+<li><p>The filename replaces <code class="docutils literal notranslate"><span class="pre">&lt;shortname&gt;:</span></code> in the format and this should be removed;
+the leading two spaces must also be removed in this structure</p></li>
+<li><p>The &lt;shortname&gt; tag is arbitrary, but used as the slug portion of the URL</p></li>
+<li><p>It can be helpful to prepend a district tag to each meeting filename</p></li>
+<li><p>Live example: <a class="reference external" href="https://github.com/area63aa/area63aa.org/tree/master/data/meetings">https://github.com/area63aa/area63aa.org/tree/master/data/meetings</a></p></li>
+</ul>
+</li>
+<li><p>For online-only meetings, <code class="docutils literal notranslate"><span class="pre">place</span></code> can be <code class="docutils literal notranslate"><span class="pre">Zoom-Only</span></code> (or similar)</p></li>
+<li><p>Meeting Guide expects US-formatted “<code class="docutils literal notranslate"><span class="pre">address</span></code>” =&gt; <code class="docutils literal notranslate"><span class="pre">&lt;street_address&gt;,</span> <span class="pre">&lt;city&gt;,</span> <span class="pre">&lt;state&gt;,</span> <span class="pre">&lt;zip&gt;</span></code></p>
+<ul class="simple">
+<li><p>AAMod will split on comma (<code class="docutils literal notranslate"><span class="pre">,</span></code>) and trim spaces</p></li>
+<li><p>If no <code class="docutils literal notranslate"><span class="pre">address</span></code> is provided, <code class="docutils literal notranslate"><span class="pre">,,,Online</span></code> is used as a
+<a class="reference internal" href="usage.html#aamod-meetingguide"><span class="std std-ref">Meeting Guide</span></a>-compatible default</p></li>
+<li><p>If no <code class="docutils literal notranslate"><span class="pre">country</span></code> is provided, <code class="docutils literal notranslate"><span class="pre">US</span></code> is used as a valid default</p></li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="about.html" class="btn btn-neutral float-left" title="About AAMod" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Using AAMod" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Recovery Source.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

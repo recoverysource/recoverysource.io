@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prebuild &mdash; Recovery Source 0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="New Website" href="../template/new.html" />
+    <link rel="prev" title="Using AAMod" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Recovery Source
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Navigation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Recovery Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../funding.html">7th Tradition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sober Page</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../soberpage/about.html">About Sober Page</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - AAMod</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About AAMod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format.html">Data Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using AAMod</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Prebuild</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#meeting-stubs">Meeting Stubs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#printable-pdf">Printable PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#script-arguments">Script Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-file">Configuration File</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hugo - Template</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../template/new.html">New Website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template/update.html">Update Website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Recovery Source</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Prebuild</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/aamodule/prebuild.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prebuild">
+<span id="aamod-prebuild"></span><h1>Prebuild<a class="headerlink" href="#prebuild" title="Permalink to this headline"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">prebuild</span></code> script builds content which hugo is not able to create.</p>
+<section id="meeting-stubs">
+<h2>Meeting Stubs<a class="headerlink" href="#meeting-stubs" title="Permalink to this headline"></a></h2>
+<p>Hugo is <a class="reference external" href="https://github.com/gohugoio/hugo/issues/5074">not able</a> to generate
+“new” pages from data sources. <code class="docutils literal notranslate"><span class="pre">Prebuild</span></code> can read <a class="reference internal" href="format.html#aamod-format"><span class="std std-ref">meeting data</span></a>
+from hugo’s data source and generate stub files.</p>
+</section>
+<section id="printable-pdf">
+<h2>Printable PDF<a class="headerlink" href="#printable-pdf" title="Permalink to this headline"></a></h2>
+<p>This is a foldable PDF that is intended to be printed on two sides and then
+folded twice, with Al-Anon meetings on one inner sheet and AA meetings on a full
+inner sheet.</p>
+<p>If there is enough interest, this can be broken into a separate repository and
+turned into a more flexible design.</p>
+<p>Live Example:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aamod-demo.recoverysource.net/meeting-schedule.pdf">AAMod:meeting-schedule.pdf</a></p></li>
+<li><p><a class="reference external" href="https://siouxfallsaa.org/meeting-schedule.pdf">SiouxFallsAA:meeting-schedule.pdf</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="script-arguments">
+<h2>Script Arguments<a class="headerlink" href="#script-arguments" title="Permalink to this headline"></a></h2>
+<p>Arguments which define how <code class="docutils literal notranslate"><span class="pre">prebuild</span></code> is bootstrapped.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ python3 ./prebuild.py -h
+usage: prebuild.py [-h] &lt;optional arguments&gt;
+
+options:
+  -h, --help         show this help message and exit
+  -c X, --config X   Configuration directory (default: ./prebuild.yaml)
+  -r X, --runtime X  Runtime overrides for yaml configuration values (default: &quot;{}&quot;)
+  -v, --verbose      Use verbose logging
+
+basic example:
+  python3 ../prebuild.py
+
+complicated example:
+  prebuild.py -c ../prebuild.yaml --runtime &#39;{&quot;stub-path&quot;: &quot;test/{shortcode}.md&quot;}&#39;
+</pre></div>
+</div>
+</section>
+<section id="configuration-file">
+<h2>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
+<p>Configuration read from <code class="docutils literal notranslate"><span class="pre">prebuild.yaml</span></code> and merged with <code class="docutils literal notranslate"><span class="pre">--runtime</span></code>.</p>
+<p><strong>Default Values:</strong></p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># List of content to build</span><span class="w"></span>
+<span class="nt">builders</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">stubs</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">pdf</span><span class="p p-Indicator">]</span><span class="w"></span>
+
+<span class="c1"># Location of meeting data (directory will be checked if .yaml is missing)</span><span class="w"></span>
+<span class="nt">meeting-data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data/meetings.yaml</span><span class="w"></span>
+
+<span class="c1"># Location of generated stubs</span><span class="w"></span>
+<span class="c1"># CAUTION: Any files matching this pattern will be purged before generation</span><span class="w"></span>
+<span class="nt">stub-path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content/meetings/{shortname}.md</span><span class="w"></span>
+
+<span class="c1"># Location of generated .pdf (and .tex)</span><span class="w"></span>
+<span class="nt">pdf-path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">static/meeting-schedule.pdf</span><span class="w"></span>
+
+<span class="c1"># Number of columns used to display content</span><span class="w"></span>
+<span class="nt">pdf-cols</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Columns used on the second page (full sheet)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">aalist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Columns used on the front (quarter sheet)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">anonlist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
+
+<span class="c1"># Hide day-of-week header if there are no meetings within</span><span class="w"></span>
+<span class="nt">hide-empty</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">aalist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="w">  </span><span class="nt">anonlist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+</pre></div>
+</div>
+<p><strong>Required Values:</strong> (example provided)</p>
+<p>The data below provides a functional example and was copied from <a class="reference external" href="https://aamod-demo.recoverysource.net/">exampleSite</a>. The <code class="docutils literal notranslate"><span class="pre">pdf-blurbs</span></code> section has <a class="reference external" href="https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/">LaTeX</a>-formatted
+data.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Should be copied from hugo configuration (config.yaml)</span><span class="w"></span>
+<span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://aamod-demo.recoverysource.net/</span><span class="w"></span>
+
+<span class="c1"># Content that is dropped into the generated .tex file</span><span class="w"></span>
+<span class="nt">pdf-blurbs</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Image displayed in folded booklet</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">themes/aamod/static/img/AAlogo.jpg</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Helpline phone number</span><span class="w"></span>
+<span class="w">  </span><span class="nt">helpline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1-800-123-4567</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Front cover of folded booklet</span><span class="w"></span>
+<span class="w">  </span><span class="nt">front</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">\vskip 2ex {\footnotesize If you have changes to this directory, please write to:}</span><span class="w"></span>
+<span class="w">    </span><span class="no">\vskip 1ex {\large Statestown Area Intergroup\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">P.O. Box 1\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">City, ST 42024}</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Note above al-anon meetings (inside-right)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">alanon</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\7pt Al-Anon members are people who are worried about someone with a drinking problem.}\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\7pt\textbf{24-Hour Hotline:} (123) 456-7890}\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\7pt\textbf{Al-Anon Information:} al-anon.org}</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Links to additional resources on back of folded booklet</span><span class="w"></span>
+<span class="w">  </span><span class="nt">resources</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\7pt\textbf{Statestown Area:} aamod-demo.recoverysource.net/meeting-times}\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\7pt\textbf{South Dakota State:} www.area63.org}</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Informational box on bottom-right of back (second) page</span><span class="w"></span>
+<span class="w">  </span><span class="nt">details</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">\textbf{Statestown Area Intergroup}\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">Meets at: Very Local AA\\</span><span class="w"></span>
+<span class="w">    </span><span class="no">{\6pt Every 2nd Sunday of the month at 4:30 PM}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage.html" class="btn btn-neutral float-left" title="Using AAMod" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../template/new.html" class="btn btn-neutral float-right" title="New Website" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Recovery Source.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

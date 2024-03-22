@@ -39,7 +39,7 @@ Report List
 
 **Demonstration:**
 `Input <https://github.com/recoverysource/aamod/tree/master/exampleSite/static/reports/treasury>`__
-->  `Output <https://aamod-demo.recoverysource.io/features/>`__
+->  `Output <https://aamod-demo.recoverysource.net/features/>`__
 
 ----
 
@@ -73,7 +73,7 @@ This requires :ref:`mapapikey<apikey>` to be configured in site config.
 
 **Demonstration:**
 `Input <https://raw.githubusercontent.com/recoverysource/aamod/master/exampleSite/content/meetings/_index.md>`__
--> `Output <https://aamod-demo.recoverysource.io/meetings/>`__
+-> `Output <https://aamod-demo.recoverysource.net/meetings/>`__
 
 ----
 
@@ -101,7 +101,7 @@ Meeting List
 
 **Demonstration:**
 `Input <https://github.com/recoverysource/aamod/tree/master/exampleSite/data/meetings.yaml>`__
--> `Output <https://aamod-demo.recoverysource.io/meetings/>`__
+-> `Output <https://aamod-demo.recoverysource.net/meetings/>`__
 
 ----
 
@@ -132,7 +132,7 @@ This requires :ref:`mapapikey<apikey>` to be configured in site config.
 
 **Demonstration:**
 `Input <https://github.com/recoverysource/aamod/blob/master/exampleSite/data/meetings.yaml#L110>`__
--> `Output <https://aamod-demo.recoverysource.io/meetings/risingtogether/>`__
+-> `Output <https://aamod-demo.recoverysource.net/meetings/risingtogether/>`__
 
 ----
 
@@ -165,11 +165,11 @@ Meeting Guide
 
 **Demonstration:**
 `Input <https://raw.githubusercontent.com/recoverysource/aamod/master/exampleSite/content/meeting-guide.md>`__
--> `Output <https://aamod-demo.recoverysource.io/meeting-guide.json>`__
+-> `Output <https://aamod-demo.recoverysource.net/meeting-guide.json>`__
 
 ----
 
-.. _working with Hugo: https://gohugo.io/getting-started/quick-start/
+.. _working with Hugo: https://gohugo.net/getting-started/quick-start/
 .. _AAMod: https://github.com/recoverysource/aamod
 .. _Shortcodes: https://jpdroege.com/blog/hugo-shortcodes-partials/
-.. _Partials: https://gohugo.io/templates/partials/
+.. _Partials: https://gohugo.net/templates/partials/

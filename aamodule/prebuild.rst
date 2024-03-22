@@ -25,7 +25,7 @@ turned into a more flexible design.
 Live Example:
 
 - `AAMod:meeting-schedule.pdf
-  <https://aamod-demo.recoverysource.io/meeting-schedule.pdf>`__
+  <https://aamod-demo.recoverysource.net/meeting-schedule.pdf>`__
 - `SiouxFallsAA:meeting-schedule.pdf
   <https://siouxfallsaa.org/meeting-schedule.pdf>`__
 
@@ -92,14 +92,14 @@ Configuration read from ``prebuild.yaml`` and merged with ``--runtime``.
 **Required Values:** (example provided)
 
 The data below provides a functional example and was copied from `exampleSite
-<https://aamod-demo.recoverysource.io/>`_. The ``pdf-blurbs`` section has `LaTeX
+<https://aamod-demo.recoverysource.net/>`_. The ``pdf-blurbs`` section has `LaTeX
 <https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/>`_-formatted
 data.
 
 .. code-block:: yaml
 
     # Should be copied from hugo configuration (config.yaml)
-    baseURL: https://aamod-demo.recoverysource.io/
+    baseURL: https://aamod-demo.recoverysource.net/
 
     # Content that is dropped into the generated .tex file
     pdf-blurbs:
@@ -125,7 +125,7 @@ data.
 
       # Links to additional resources on back of folded booklet
       resources: |
-        {\7pt\textbf{Statestown Area:} aamod-demo.recoverysource.io/meeting-times}\\
+        {\7pt\textbf{Statestown Area:} aamod-demo.recoverysource.net/meeting-times}\\
         {\7pt\textbf{South Dakota State:} www.area63.org}
 
       # Informational box on bottom-right of back (second) page

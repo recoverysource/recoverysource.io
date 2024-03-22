@@ -28,8 +28,8 @@ focusing on both predictable billing and a high quality end-user experience.
      - Item
      - Purpose
 
-   * - $50/yr
-     - Register recoverysource.io
+   * - $15/yr
+     - Register recoverysource.net
      - Documentation, Demonstrationss, Tests, Etc.
 
    * - $20/yr
@@ -48,7 +48,7 @@ focusing on both predictable billing and a high quality end-user experience.
      - CloudFlare
      - Basic CDN and DDoS protection
 
-Total: ``$135/yr``
+Total: ``$100/yr``
 
 **Prudent Reserve:**
 
@@ -64,8 +64,8 @@ is able to accept from it's members.
    * - Cost
      - Item
 
-   * - $350*
-     - 7 yr Registration for https://recoverysource.io/
+   * - $75*
+     - 5 yr Registration for https://recoverysource.net/
 
    * - $274*
      - 8 yr Registration for https://sober.page/

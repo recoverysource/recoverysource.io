@@ -1,14 +1,93 @@
+.. _project-internals:
+
+Project Internals
+=================
+
+This page provides detailed internal information about our project.
+
+7th Tradition
+-------------
+
+``Recovery Source`` is a "passion project," created from a drive to enable
+struggling groups to reach those who still suffer. This project is fully
+self-supported by voluntary contributions from project members who desire to
+share such expenses.
+
+The services we provide will remain completely free for all 12-Step programs who
+find the service useful; no outside donations are accepted.
+
+Current Expenses
+----------------
+
+Recovery Source strives for solutions with the lowest total cost of ownership,
+focusing on both predictable billing and a high quality end-user experience.
+
+**Recurring Costs:**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 40 50
+
+   * - Cost
+     - Item
+     - Purpose
+
+   * - $15/yr
+     - Register recoverysource.net
+     - Documentation, Demonstrationss, Tests, Etc.
+
+   * - $20/yr
+     - Register sobersupport.group
+     - Top-level address for support group sites
+
+   * - $35/yr
+     - Register sober.page
+     - Short and memorable alias
+
+   * - $30/yr
+     - Vultr
+     - VPS (forwarding service backend)
+
+   * - $0/yr
+     - CloudFlare
+     - Basic CDN and DDoS protection
+
+Total: ``$100/yr``
+
+**Prudent Reserve:**
+
+Registrar pricing can be tricky, so it is prudent to lock-in acceptable prices
+for as long as possible, which ICANN limits to ten years. All other funding is
+accepted only when needed. The table below lists all contributions this project
+is able to accept from it's members.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 90
+
+   * - Cost
+     - Item
+
+   * - $75*
+     - 5 yr Registration for https://recoverysource.net/
+
+   * - $274*
+     - 8 yr Registration for https://sober.page/
+
+   * - $40
+     - 2 yr Registration for https://sobersupport.group/
+
+* Last Verified: 18 Feb 2024
+
 .. _code-of-conduct:
 
 Code of Conduct
-===============
+---------------
 
-This Code is not exhaustive or complete. It is not a rulebook; it serves to
-distil our common understanding of a collaborative, shared environment and
-goals. We expect it to be followed in spirit as much as in the letter.
-
-Recovery Source CoC
--------------------
+.. note::
+   This Code is not exhaustive or complete. It is not a rulebook; it serves to
+   distil our common understanding of a collaborative, shared environment and
+   goals. We expect it to be followed in spirit as much as in the letter.
 
 - Version: 1.0 [`view history <https://github.com/recoverysource/recoverysource.github.io/commits/master/code-of-conduct.rst>`_]
 
@@ -118,16 +197,14 @@ We strive to:
 
   When in doubt, ask for a second opinion.
 
-License
--------
+.. note::
+   This Code of Conduct (CoC) is based on `Ubuntu Code of Conduct v2.0
+   <https://ubuntu.com/community/ethos/code-of-conduct>`_ with various
+   modifications intended to follow the spirit of `12-Step Programs
+   <https://en.wikipedia.org/wiki/Twelve-step_program>`_.
 
-This Code of Conduct (CoC) is based on `Ubuntu Code of Conduct v2.0
-<https://ubuntu.com/community/ethos/code-of-conduct>`_ with various
-modifications intended to follow the spirit of `12-Step Programs
-<https://en.wikipedia.org/wiki/Twelve-step_program>`_.
-
-The Recovery Source Code of Conduct is licensed under the `Creative Commons
-Attribution-Share Alike 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_
-license. You may re-use it for your own project, and modify it as you wish,
-just allow others to use your modifications and give credit to the Ubuntu and
-Recovery Source projects.
+   The Recovery Source Code of Conduct is licensed under the `Creative Commons
+   Attribution-Share Alike 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_
+   license. You may re-use it for your own project, and modify it as you wish,
+   just allow others to use your modifications and give credit to the Ubuntu and
+   Recovery Source projects.

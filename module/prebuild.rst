@@ -1,7 +1,7 @@
 .. _aamod-prebuild:
 
-Prebuild
-========
+Prebuild Generation
+===================
 
 The ``prebuild`` script builds content which hugo is not able to create.
 
@@ -9,7 +9,7 @@ Meeting Stubs
 -------------
 
 Hugo is `not able <https://github.com/gohugoio/hugo/issues/5074>`__ to generate
-"new" pages from data sources. ``Prebuild`` can read :ref:`meeting data<aamod-format>`
+"new" pages from data sources. ``Prebuild`` can read :ref:`meeting data<meeting-format>`
 from hugo's data source and generate stub files.
 
 Printable PDF

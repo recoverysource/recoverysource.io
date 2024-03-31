@@ -1,7 +1,13 @@
 .. _aamod-about:
 
+About Hugo
+==========
+
+- Recap SSG
+- Summarize Hugo and modules/themes
+
 About AAMod
-===========
+-----------
 
 `AAMod`_ (``aamod``) is a website solution for Alcoholics Anonymous (A.A.)-related
 website, with a focus on sharing meeting information in a fast and secure manner.

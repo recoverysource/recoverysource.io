@@ -1,7 +1,7 @@
-.. _aamod-format:
+.. _meeting-format:
 
-Data Format
------------
+Meeting Data Format
+-------------------
 
 .. warning::
    Use of correct space and syntax in yaml files is CRITICAL!

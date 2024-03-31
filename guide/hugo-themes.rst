@@ -1,0 +1,7 @@
+.. _hugo-themes:
+
+Modify Hugo Themes
+==================
+
+This should focus on making changes :ref:`Our Template <about-template>`, rather
+than creating a new (sub)theme.

@@ -1,7 +1,15 @@
 .. _aamod-newsite:
 
-New Website
-===========
+Start New Site
+==============
+
+- Full explanation of what needs to happen
+- How to update configuration
+- Heavy linking to previous resources in order to fully explain each step
+- Tutorial: Deploy a hugo template
+
+
+**New Website:**
 
 It is important to understand that deploying a website, maintaining the website
 itself, and maintaining the content on the website are three fundamentally
@@ -11,7 +19,7 @@ The instructions on this page cover the initial setup and require a level of
 technical competency which may not be readily available; this should not stop
 you! Please, reach out on `discord`_ if you need help.
 
-Continued maintenance is primarily limited to :ref:`Content Updates <aamod-update>`.
+Continued maintenance is primarily limited to content updates.
 
 Prerequisite: DNS
 -----------------

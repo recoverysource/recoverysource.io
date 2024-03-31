@@ -1,10 +1,9 @@
-.. _aamod-usage:
+.. _features:
 
-Using AAMod
-===========
+AAMod Features
+==============
 
-This page is primarily intended for website editors who are comfortable `working
-with Hugo`_ websites and covers all "features" provided by ``AAMod``.
+This page provides a list of features that are provided by AAMod.
 
 Feature Types
 -------------

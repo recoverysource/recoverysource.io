@@ -1,7 +1,7 @@
-.. _soberpage-about:
+.. _soberpage:
 
-About Sober Page
-================
+Sober Page Services
+===================
 
 ``Sober Page`` attempts to provide a minimum standard for DNS, along with
 recommendations for effective use, and training on that usage.

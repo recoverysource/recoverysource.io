@@ -3,26 +3,67 @@
 Project Internals
 =================
 
-This page provides detailed internal information about our project.
+This page provides detailed internal information about our project. If you are
+new to our documentation, then feel free to skip this and head over to
+:ref:`getting-started`.
+
+Project Background
+------------------
+
+``Recovery Source`` was created to support groups who are struggling to reach
+those who still suffer. The services we offer will remain free for all 12-Step
+programs that wish to participate.
+
+Our original goal was to provide a website solution that **anyone** can easily
+deploy/maintain, without having to worry about cost, security updates, or
+predatory services, allowing "website maintenance" to become a matter of
+accurate record keeping.
+
+Financial Transparency
+----------------------
+
+The website solution developed to meet the original goal requires no financial
+overhead and only requires that you provide a :ref:`domain name <def-dns>`.
+
+Unfortunately, we found that predatory DNS (and over-priced services) are
+extremely common, with multiple known instances of groups paying over $500/yr
+on services which were not even utilized.
+
+By accepting a certain amount of overhead, we are able to **fully** absorb
+operational expenses related to owning a domain. This allows us a great amount
+of flexibility to provide specialized support, but does require that we pay
+for that overhead.
+
+The financial disclosures presented in this section are meant to provide
+assurance that 1) we can meet our operational expenses, 2) because we are are
+effective stewards of financial resources.
+
+.. _tradition-7:
 
 7th Tradition
--------------
+~~~~~~~~~~~~~
 
-``Recovery Source`` is a "passion project," created from a drive to enable
-struggling groups to reach those who still suffer. This project is fully
-self-supported by voluntary contributions from project members who desire to
-share such expenses.
+.. admonition:: The 7th Tradition of Alcoholics Anonymous
 
-The services we provide will remain completely free for all 12-Step programs who
-find the service useful; no outside donations are accepted.
+   Every A.A. group ought to be fully self-supporting, declining outside
+   [financial] contributions.
 
-Current Expenses
-----------------
+In the same way that newcomers are encouraged to focus on their sobriety first
+and foremost, we too wish for the groups we serve to focus on their outreach.
+
+**We do not accept donations** from the groups we serve and encourage new group
+members to contribute time and effort, rather than financial resources.
+
+By following the 7th Tradition, we are able to prioritize reaching out to those
+who still suffer. For more information, refer to our :ref:`Core Principles <principles>`.
+
+.. _expensens:
+
+Recurring Expenses
+~~~~~~~~~~~~~~~~~~
 
 Recovery Source strives for solutions with the lowest total cost of ownership,
 focusing on both predictable billing and a high quality end-user experience.
-
-**Recurring Costs:**
 
 .. list-table::
    :header-rows: 1
@@ -54,12 +95,19 @@ focusing on both predictable billing and a high quality end-user experience.
 
 Total: ``$100/yr``
 
-**Prudent Reserve:**
+.. _prudent-reserve:
 
-Registrar pricing can be tricky, so it is prudent to lock-in acceptable prices
-for as long as possible, which ICANN limits to ten years. All other funding is
-accepted only when needed. The table below lists all contributions this project
-is able to accept from it's members.
+Prudent Reserve
+~~~~~~~~~~~~~~~
+
+Registrar pricing is not entirely predictable, especially for premium domains,
+making it wise to secure favorable prices for as long as possible, which ICANN
+limits to ten years.
+
+In order to maintain ``project balance of $0.00``, our prudent reserve is
+limited to these non-refundable domain costs.
+
+This table lists maximum contributions that can currently be accepted:
 
 .. list-table::
    :header-rows: 1
@@ -79,7 +127,7 @@ is able to accept from it's members.
 
 * Last Verified: 18 Feb 2024
 
-.. _code-of-conduct:
+.. _conduct:
 
 Code of Conduct
 ---------------

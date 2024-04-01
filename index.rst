@@ -6,8 +6,8 @@
    :caption: Our Project
 
    self
-   project/getting-started
    project/internals
+   project/getting-started
    project/glossary
 
 .. toctree::

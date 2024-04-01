@@ -73,9 +73,9 @@ aware of mistakes we have made. We will recognize the earnest effort of others
 and guide them through mistakes. Open communication will enable us to reach the
 newcomer.
 
-The :ref:`Code of Conduct <code-of-conduct>` used by this project is offered as
-a basic template that aims to embody A.A. principles, including respect for
-others and anonymity.
+The :ref:`Code of Conduct <conduct>` used by this project is offered as a basic
+template that aims to embody A.A. principles, including respect for others and
+anonymity.
 
 To accept this responsibility ...
 

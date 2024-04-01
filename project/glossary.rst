@@ -3,7 +3,9 @@
 Glossary
 ========
 
-This glossary introduces common terminology used within this project.
+This glossary introduces common terminology used within this project. If you are
+new to our project documentation, we recommend briefly skimming through this
+page in order to familiarize yourself with common terms.
 
 .. _def-commit:
 

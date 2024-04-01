@@ -1,4 +1,4 @@
-.. _about-template:
+.. _template-about:
 
 About Our Template
 ==================
